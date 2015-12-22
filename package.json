@@ -15,5 +15,5 @@
     "start": "node server.js"
   },
   "author": "Nicolaj Egelund",
-  "license": "ISC",
+  "license": "ISC"
 }

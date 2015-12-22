@@ -7614,6 +7614,7 @@
 		"webserver.js"
 	],
 	"assets": [
+		".gitignore",
 		"csgo-game-info.jxp",
 		"index.html",
 		"node_modules\\accepts\\HISTORY.md",
@@ -8488,6 +8489,7 @@
 		"public\\bg.png",
 		"public\\fire.gif",
 		"public\\style.css",
+		"README.md",
 		"src\\nodejs\\5.2.0\\node-v5.2.0\\.eslintignore",
 		"src\\nodejs\\5.2.0\\node-v5.2.0\\.eslintrc",
 		"src\\nodejs\\5.2.0\\node-v5.2.0\\.gitattributes",
@@ -14805,6 +14807,7 @@
 	],
 	"preInstall": null,
 	"library": true,
+	"readme_file": "README.md",
 	"fs_reach_sources": true,
 	"native": true
 }

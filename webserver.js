@@ -23,10 +23,10 @@ app.post('/', function(req, res) {
 });
 
 io.on('connection', function(socket) {
-  	console.log('a user connected');
+  	console.log('A client connected');
   	clients.push(socket);
 });
 
 http.listen(3000, function(){
-	console.log('listening on *:3000');
+	console.log('Listening on *:3000');
 });
