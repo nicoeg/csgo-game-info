@@ -26,6 +26,7 @@ Now the script should work, and your viewers will be able to see your score with
 
 It's possible to change the colors of the box, to do so goto the CLR Browser element in Open Broadcaster and navigate to the css tab.
 In here you can change the properties of the different elements like this:
+Ultimate CSS Gradient Generator is a really cool to for creating sweet css gradients: [a link](http://www.colorzilla.com/gradient-editor/)
 
 
     .content {
