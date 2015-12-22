@@ -14,6 +14,8 @@ To start the script run
 
 Remember to change the steamid to yours in index.html
 
+Alternatively you can use the executable file I've provided if you don't want to install Nodejs
+
 After this open up Open Broadcaster and create a new CLR browser element.
 You can find it here: [a link](https://obsproject.com/forum/resources/clr-browser-source-plugin.22/)
 
