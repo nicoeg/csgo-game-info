@@ -17,7 +17,7 @@ Remember to change the steamid to yours in index.html
 Alternatively you can use the executable file I've provided if you don't want to install Nodejs
 
 After this open up Open Broadcaster and create a new CLR browser element.
-You can find it here: [a link](https://obsproject.com/forum/resources/clr-browser-source-plugin.22/)
+You can find it here: [CLR Browser](https://obsproject.com/forum/resources/clr-browser-source-plugin.22/)
 
 Put http://localhost:3000 in the URL and 250 for width and 131 for height.  
 Now the script should work, and your viewers will be able to see your score without you having to press tab.
@@ -26,7 +26,7 @@ Now the script should work, and your viewers will be able to see your score with
 
 It's possible to change the colors of the box, to do so goto the CLR Browser element in Open Broadcaster and navigate to the css tab.
 In here you can change the properties of the different elements like this:
-Ultimate CSS Gradient Generator is a really cool to for creating sweet css gradients: [a link](http://www.colorzilla.com/gradient-editor/)
+[Ultimate CSS Gradient Generator](http://www.colorzilla.com/gradient-editor/) is a really cool to for creating sweet css gradients: 
 
 
     .content {
