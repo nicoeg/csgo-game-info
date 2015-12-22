@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feed</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<div id="round-overlay"></div>
+	<template id="round-template">
+		{{#if map}}
+			{{#equals map.mode "competitive"}}
+				<div class="game-info">
+				    <div class="outer-mask">
+				        <div class="inner-mask">
+				            <div class="content">Game Info</div>
+				        </div>
+				    </div>
+				    <div class="data border">
+				      <div class="score">
+				        <div class="t text-color {{#equals player.team 'T'}} highlight {{/equals}}">T</div>
+				        <span>{{ map.team_t.score }}</span>
+				        <span class="text-color"> - </span>
+				        <span>{{ map.team_ct.score }}</span>
+				        <div class="ct text-color {{#equals player.team 'CT'}} highlight {{/equals}}">CT</div>
+				      </div>
+				      <div class="box3rd border text-color">K</div>
+				      <div class="box3rd border text-color">A</div>
+				      <div class="box3rd border text-color">D</div>
+				      <div class="box3rd border">{{ player.match_stats.kills }}</div>
+				      <div class="box3rd border">{{ player.match_stats.assists }}</div>
+				      <div class="box3rd border">{{ player.match_stats.deaths }}</div>
+				      <div class="clr"></div>
+				    </div>
+				</div>
+			{{/equals}}
+		{{/if}}
+	</template>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script>
+		Handlebars.registerHelper('equals', function(a, b, opts) {
+		    if(a == b) // Or === depending on your needs
+		        return opts.fn(this);
+		    else
+		        return opts.inverse(this);
+		});
+
+		var socket = io();
+
+		socket.on('data', function(data) {
+			if (data.player.steamid == "76561197984143124") {
+				var source   = $("#round-template").html();
+				var template = Handlebars.compile(source);
+				$('#round-overlay').html(template(data));
+			}
+		});
+	</script>
+</body>
+</html>

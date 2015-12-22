@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  overflow: hidden;
+}
+
+.game-info {
+  width: 250px;
+}
+
+.outer-mask {
+    font-weight: bold;
+    font-size: 25px;
+    color: #222;
+    position: relative;
+    left: 23px;
+    width: 220px;
+    height: 35px;
+    overflow: hidden;
+    -webkit-transform: skew(-40deg, 0deg);
+        -ms-transform: skew(-40deg, 0deg);
+         -o-transform: skew(-40deg, 0deg);
+            transform: skew(-40deg, 0deg);
+}
+.inner-mask {
+    position: absolute;
+    left: -45px;
+    top: 0px;
+    width: 250px;
+    height: 35px;
+    overflow: hidden;
+    -webkit-transform: skew(40deg, 0deg);
+        -ms-transform: skew(40deg, 0deg);
+         -o-transform: skew(40deg, 0deg);
+            transform: skew(40deg, 0deg);
+}
+.content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    height: 35px;
+    background: #93c928;
+    background: -moz-linear-gradient(top, #93c928 1%,#93c928 40%,#497306 60%,#497306 100%);
+    background: -webkit-linear-gradient(top,  #93c928 1%,#93c928 40%,#497306 60%,#497306 100%);
+    background: linear-gradient(to bottom, #93c928 1%,#93c928 40%,#497306 60%,#497306 100%);
+    text-align: center;
+    padding-top: 2px;
+    padding-left: 30px;
+}
+
+.data {
+  width: 218px;
+  margin-left: 11px;
+  background: #131411;
+  border: 3px solid #1F2E14;
+}
+
+.score {
+  position: relative;
+  height: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.score div {
+  position: absolute;
+  top: 5px;
+}
+
+.score .t {
+  left: 10px;
+}
+
+.score .ct {
+  right: 10px;
+}
+
+.highlight {
+  box-shadow: 0px 0px 4px #bbb;
+  border-radius: 1px;
+  height: 21px;
+  padding: 0 3px 0 2px;
+}
+
+.score span {
+  text-align: center;
+}
+
+.box3rd {
+  width: 33.33%;
+  height: 30px;
+  float: left;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 5px;
+  border-width: 0;
+  border-top: 3px solid;
+  border-style: solid;
+  border-color: #1F2E14;
+}
+
+.box3rd:nth-child(3n+2) {  
+  border-right-width: 3px;
+}
+
+.box3rd:nth-child(3n+1) {  
+  border-left-width: 3px;
+}
+
+.text-color {
+  color: #93c928;
+}
+
+.clr {
+  clear: both;
+}

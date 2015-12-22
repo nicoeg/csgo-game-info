@@ -1,0 +1,19 @@
+{
+  "name": "csgo-data-tracker",
+  "version": "1.0.0",
+  "description": "A script which creates a simple webservice to display game info from csgo",
+  "main": "webserver.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "socket.io": "^1.3.7",
+    "socketio": "^1.0.0",
+    "winston": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nicolaj Egelund",
+  "license": "ISC",
+}
