@@ -48,9 +48,13 @@
 		});
 
 		var socket = io();
+		var steamid = "";
 
 		socket.on('data', function(data) {
-			if (data.player.steamid == "76561197984143124") {
+			console.log(data);
+			if (data.player.activity == "menu")
+				steamid = data.player.steamid;
+			if (data.player.steamid == steamid) {
 				var source   = $("#round-template").html();
 				var template = Handlebars.compile(source);
 				$('#round-overlay').html(template(data));
