@@ -5,7 +5,7 @@ Script for displaying game info on stream in Counter-Strike Global Offensive
 
 First you'll need to put the cfg file in this repository called gamestate_integration_gameinfo.cfg into your counter strikes cfg folder.
 
-after this clone or download the repository then run   
+After this clone or download the repository then run   
 
     $ npm install
 To start the script run
