@@ -21,3 +21,23 @@ You can find it here: [a link](https://obsproject.com/forum/resources/clr-browse
 
 Put http://localhost:3000 in the URL and 250 for width and 131 for height.  
 Now the script should work, and your viewers will be able to see your score without you having to press tab.
+
+## Changing the colors
+
+It's possible to change the colors of the box, to do so goto the CLR Browser element in Open Broadcaster and navigate to the css tab.
+In here you can change the properties of the different elements like this:
+
+
+    .content {
+        background: #cb60b3;
+        background: -moz-linear-gradient(top, #cb60b3 0%, #ad1283 50%, #de47ac 100%);
+        background: -webkit-linear-gradient(top, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+        background: linear-gradient(to bottom, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 );
+    }
+    .text-color {
+        color: blue;
+    }
+    .border {
+        border-color: #fff;
+    }
